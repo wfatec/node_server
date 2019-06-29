@@ -1,11 +1,10 @@
 const Koa = require('koa');
-const bodyParser = require('koa-bodyparser');
+const middlewares = require('./middlewares')
 const router = require('./router');
 
 const app = new Koa();
 
-app.use(bodyParser());
-
+middlewares(app);
 router(app);
 
 app.listen(3000, ()=>{
