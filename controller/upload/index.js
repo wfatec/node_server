@@ -1,7 +1,5 @@
-const upload = require('../../utils/upload');
-
-const uploadRoute = router => {
-    router.post('/uploadfile', upload.array('files', 20), async (ctx, next) => {
+module.exports = {
+    upload: async (ctx, next) => {
         const fileList = ctx.req.files; // 获取上传文件
         if (!fileList.length) {
             ctx.status = 400;
@@ -23,9 +21,5 @@ const uploadRoute = router => {
         });
     
         return "上传成功！"
-        
-    });
+    }
 }
-
-
-module.exports = uploadRoute
