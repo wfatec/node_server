@@ -3,10 +3,26 @@ const staticFiles = require("koa-static");
 const ip = require("ip");
 const path = require("path");
 const nunjucks = require("koa-nunjucks-2");
-const httpError = require("./http-error");
-const log = require("./log");
+const httpError = require("./mi-http-error");
+const log = require("./mi-log");
+// const miRule = require('./mi-rule');
 
 module.exports = app => {
+  // miRule({
+  //   app,
+  //   rules: [
+  //     {
+  //       //指定controller文件夹下的js文件，挂载在app.controller属性
+  //       folder: path.join(__dirname, "../controller"),
+  //       name: "controller"
+  //     },
+  //     {
+  //       // 指定service文件夹下的js文件，挂载在app.service属性
+  //       folder: path.join(__dirname, "../service"),
+  //       name: "service"
+  //     }
+  //   ]
+  // });
   app.use(
     httpError({
       errorPageFolder: path.resolve(__dirname, "../errorPage")
