@@ -13,12 +13,17 @@
     "async": "^2.6.2",
     "co": "^4.6.0",
     "crypto-js": "^3.1.9-1",
+    "ip": "^1.1.5",
     "koa": "^2.5.0",
     "koa-body": "^4.1.0",
     "koa-bodyparser": "^4.2.1",
     "koa-multer": "^1.0.2",
+    "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^4.4.0",
     "nunjucks": "^3.2.0",
+    "pidusage": "^2.0.17",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
