@@ -3,7 +3,7 @@ const access = require("./access.js");
 const methods = ["trace", "debug", "info", "warn", "error", "fatal", "mark"];
 
 const baseInfo = {
-  appLogLevel: 'debug',
+  appLogLevel: 'warn',
   dir: 'logs',
   env: 'dev',
   projectName: 'sdk',
