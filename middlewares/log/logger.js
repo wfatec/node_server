@@ -24,11 +24,11 @@ module.exports = (options) => {
     alwaysIncludePattern: true
   }
   
-  // if (env === "dev" || env === "local" || env === "development") {
-  //   appenders.out = {
-  //     type: "console"
-  //   }
-  // }
+  if (env === "dev" || env === "local" || env === "development") {
+    appenders.out = {
+      type: "console"
+    }
+  }
   let config = {
     appenders,
     categories: {
