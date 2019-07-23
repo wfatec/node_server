@@ -8,17 +8,17 @@ module.exports = {
           {
             mainModule: "办事窗",
             subModule: "因私出境",
-            "clickNum ": 1500
+            clickNum: 1500
           },
           {
             mainModule: "办事窗",
             subModule: "信息变更",
-            "clickNum ": 1000
+            clickNum: 1000
           },
           {
             mainModule: "办事窗",
             subModule: "收入证明",
-            "clickNum ": 800
+            clickNum: 800
           }
         ],
         totalPage: 5
@@ -34,12 +34,12 @@ module.exports = {
           {
             mainModule: "办事窗",
             subModule: "因私出境",
-            "uniqueVistor ": 1500
+            uniqueVistor: 1500
           },
           {
             mainModule: "办事窗",
             subModule: "信息变更",
-            "uniqueVistor ": 1000
+            uniqueVistor: 1000
           },
           {
             mainModule: "办事窗",
