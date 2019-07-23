@@ -123,7 +123,7 @@ module.exports = {
       SUCCESS: "TRUE",
       MESSAGE: "",
       DATA: {
-        roleList: [
+        ageList: [
           {
             ageID: 1,
             ageName: "25岁以下"
