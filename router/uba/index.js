@@ -24,10 +24,12 @@ module.exports = app => {
     // 转化分析
     router.post('/conversion/apply', UBAController.conversion.apply);
     router.post('/conversion/applyChart', UBAController.conversion.applyChart);
+    router.post('/conversion/completeChart', UBAController.conversion.completeChart);
+    router.post('/conversion/complete', UBAController.conversion.complete);
    
     //其它业务
-    router.get('/uba/business/hitogram', UBAController.business.hitogram);
-    router.get('/uba/business/tabular', UBAController.business.tabular);
+    router.post('/uba/business/hitogram', UBAController.business.hitogram);
+    router.post('/uba/business/tabular', UBAController.business.tabular);
 
     // 筛选接口
     router.get('/param/role', UBAController.param.role);
