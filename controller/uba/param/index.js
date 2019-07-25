@@ -143,5 +143,31 @@ module.exports = {
         ]
       }
     });
+  },
+  changeBusiness: async (ctx, next) => {
+    return (ctx.body = {
+      SUCCESS: "TRUE",
+      MESSbusiness: "",
+      DATA: {
+        businessList: [
+          {
+            businessID: 1,
+            businessName: "因私出境"
+          },
+          {
+            businessID: 2,
+            businessName: "信息变更"
+          },
+          {
+            businessID: 3,
+            businessName: "收入证明"
+          },
+          {
+            businessID: 4,
+            businessName: "公积金转移"
+          }
+        ]
+      }
+    });
   }
 };

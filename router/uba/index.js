@@ -36,6 +36,7 @@ module.exports = app => {
     router.get('/param/org', UBAController.param.org);
     router.get('/param/channel', UBAController.param.channel);
     router.get('/param/age', UBAController.param.age);
+    router.get('/param/changeBusiness', UBAController.param.changeBusiness);
 
     app.use(router.routes());
 }
