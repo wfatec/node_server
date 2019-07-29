@@ -6,7 +6,7 @@ const baseInfo = {
   appLogLevel: 'warn',
   dir: 'logs',
   env: 'dev',
-  projectName: 'sdk',
+  projectName: 'uba',
   serverIp: '0.0.0.0'
 }
 
